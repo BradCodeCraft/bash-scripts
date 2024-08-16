@@ -11,5 +11,5 @@ git commit -m "$commitMessage"
 echo "Push?"
 read -r pushDecision
 if [ "$pushDecision" == "y" ]; then
-  git commit
+  git push
 fi
