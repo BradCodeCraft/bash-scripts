@@ -26,4 +26,4 @@ echo "Change ownership of IntelliJ Community Edition folder"
 sudo chown -R $USER /opt/intellij-community-edition
 
 echo "Starting IntelliJ Community Edition bash file"
-exec /intellij-community-edition/bin/idea.sh
+exec /opt/intellij-community-edition/bin/idea.sh
