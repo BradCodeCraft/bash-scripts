@@ -26,7 +26,7 @@ echo "Change ownership of Firefox Developer Edition folder"
 sudo chown -R $USER /opt/firefox-developer-edition
 
 echo "Copy shortcut file"
-sudo cp /home/ibn/Desktop/repositories/github/bash-scripts/firefox-developer-edition.desktop ~/.local/share/applications/
+sudo cp ~/Desktop/repositories/gh/bash-scripts/firefox-developer-edition.desktop ~/urs/share/applications/
 
 echo "Mark launcher trusted and executable"
-sudo chmod +x ~/.local/share/applications/firefox-developer-edition.desktop
+sudo chmod +x ~/usr/share/applications/firefox-developer-edition.desktop
