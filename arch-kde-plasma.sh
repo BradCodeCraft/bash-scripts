@@ -30,7 +30,7 @@ sudo systemctl start bluetooth.service
 sudo systemctl enable bluetooth.service
 
 echo "Installing Packages"
-sudo pacman -S --noconfirm --needed gcc make ripgrep fd unzip neovim nodejs npm github-cli kdeconnect
+sudo pacman -S --noconfirm --needed gcc make ripgrep fd unzip neovim nodejs npm github-cli kdeconnect neofetch
 yay -S firefox firefox-developer-edition
 
 echo "Removing Unnecessary Packages"
