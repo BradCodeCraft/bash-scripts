@@ -32,7 +32,3 @@ yay -S firefox firefox-developer-edition
 echo "Cloning Dotfiles"
 git clone https://github.com/bradcodecraft/nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
 git clone https://github.com/bradcodecraft/kitty.git "${XDG_CONFIG_HOME:-$HOME/.config}"/kitty
-
-echo "Creating repositories"
-cd ~/Desktop
-mkdir repositories
