@@ -25,6 +25,10 @@ sudo ufw allow 1714:1764/udp
 sudo ufw allow 1714:1764/tcp
 sudo ufw reload
 
+echo "Enabling Bluetooth"
+sudo systemctl start bluetooth.service
+sudo systemctl enable bluetooth.service
+
 echo "Installing Packages"
 sudo pacman -S --noconfirm --needed gcc make ripgrep fd unzip neovim nodejs npm kitty github-cli kdeconnect
 yay -S firefox firefox-developer-edition
