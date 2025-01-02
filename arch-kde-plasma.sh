@@ -29,6 +29,13 @@ echo "Installing Packages"
 sudo pacman -S --noconfirm --needed gcc make ripgrep fd unzip neovim nodejs npm kitty github-cli kdeconnect
 yay -S firefox firefox-developer-edition
 
+echo "Removing Unnecessary Packages"
+sudo pacman -Rns --noconfirm --needed konsole kate
+
 echo "Cloning Dotfiles"
 git clone https://github.com/bradcodecraft/nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
 git clone https://github.com/bradcodecraft/kitty.git "${XDG_CONFIG_HOME:-$HOME/.config}"/kitty
+
+echo "Make directories"
+mkdir ~/Desktop/repositories
+mv ~/Desktop/bash-scripts ~/Desktop/repositories
